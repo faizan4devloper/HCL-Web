@@ -1,0 +1,68 @@
+/* SideBar.module.css */
+
+.sideBar {
+  width: 350px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid rgba(219, 197, 255, 1);
+  overflow-y: auto; /* Enable vertical scrolling */
+  overscroll-behavior: contain; /* Prevent overscrolling */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+.menuItem {
+  display: block;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.active {
+  background: linear-gradient(90deg, #6f36cd 0%, #1f77f6 100%);
+  color: white;
+  border-radius: 10px 0 0 10px; /* Add border radius to the left side */
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row; /* Make the menu item a row layout */
+  justify-content: space-between; /* Align items with space between */
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0px;
+  position: relative;
+  transition: background-color 0.3s; /* Add transition for smoother effect */
+}
+
+.menuItem:not(.active):hover {
+  background-color: rgba(230, 235, 245, 1);
+  color: rgba(95, 30, 193, 1);
+  border-radius: 10px 0 0 10px; /* Add border radius to the left side */
+}
+
+.icon {
+  color: rgba(23, 23, 25, 1);
+  font-size: 12px;
+}
+
+.active .icon {
+  color: white; /* Apply active styles to the icons */
+}
+
+.menuItem:hover .icon {
+  color: rgba(95, 30, 193, 1); /* Change icon color on hover */
+}
+
+.label {
+  margin: 0 20px;
+}

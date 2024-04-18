@@ -1,0 +1,38 @@
+.navbarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  background-color: #fff;
+  border-bottom: 0.1px solid rgba(219, 197, 255, 1);
+  padding: 10px 0px;
+  z-index: 1000;
+}
+.navbarWrapper .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px -250px;
+}
+.logo img {
+  max-height: 20px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #6f36cd 0%, #1f77f6 100%);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+}
+
+.content {
+  padding-top: 70px; /* Adjust the value to match the height of your header */
+}

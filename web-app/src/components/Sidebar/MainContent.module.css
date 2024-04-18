@@ -1,0 +1,31 @@
+.mainContent {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  padding-top: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mainContent h2 {
+  font-size: 20px;
+  margin-top: 0px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.mainContent p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mainContent ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+.mainContent img {
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent inline alignment issues */
+  margin: 0 auto; /* Center the image horizontally */
+}
