@@ -50,6 +50,14 @@
   border-radius: 10px 0 0 10px; /* Add border radius to the left side */
 }
 
+/* Override hover effect for active state */
+.menuItem.active:hover {
+  background-color: linear-gradient(90deg, #6f36cd 0%, #1f77f6 100%);
+  color: white;
+}
+.menuItem.active:hover .icon {
+  color: white;
+}
 .icon {
   color: rgba(23, 23, 25, 1);
   font-size: 12px;
@@ -66,3 +74,5 @@
 .label {
   margin: 0 20px;
 }
+
+/* Define any other styles you need for your component */

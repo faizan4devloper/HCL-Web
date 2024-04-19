@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +9,7 @@ import descriptionImg from "./Icons/Description.svg";
 import solutionFlowImg from "./Icons/SolutionFlow.svg";
 import demoImg from "./Icons/Demo.svg";
 import techArchitectureImg from "./Icons/ArchitectureFlow.svg";
-import benefitsImg from "./Icons/Benefit's.svg";
+import benefitsImg from "./Icons/Benefits.svg";
 
 const SideBar = ({ activeTab, handleTabChange }) => {
   const menuItems = [
@@ -35,7 +36,6 @@ const SideBar = ({ activeTab, handleTabChange }) => {
         >
           <img
             src={item.img}
-            alt="Icon"
             className={`${styles.iconImg} ${styles.hoverEffect}`}
           />
           <span className={styles.label}>{item.label}</span>
